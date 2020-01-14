@@ -179,6 +179,7 @@ public class userChat extends AppCompatActivity implements View.OnClickListener 
                     {
                         for(ParseObject users: objects)
                         {
+
                             date=users.getCreatedAt();
                             String waMessage=users.get("message")+"";
                             if(users.get("messageSender").equals(ParseUser.getCurrentUser().getUsername()))
